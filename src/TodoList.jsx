@@ -52,6 +52,11 @@ const TodoItem = ({ id, onRemove, isEditing, setIsEditing }) => {
         anchorEl={anchorEl}
         onClose={handlePopoverClose}
         className="pointer-events-none"
+        anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+        }}
+
       >
         <p className="text-red-600 py-2 px-4">{error}</p>
       </Popover>
